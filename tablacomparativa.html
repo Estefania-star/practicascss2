@@ -3,64 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Tabla comp</title>
 
 </head>
 
 <body>
-    <header>
-        <img src="img/logo_html.avif" ssf="Logo de HTML" width="55">
-        <Span>Evolución del HTML: de HTML 1.0 a HTML5</Span>
-    </header>
-    <nav>
-        <ul>
-            <li><li><a href="index.html" >Inicio</a></li></li>
-            <li><a href="Lineadetiempo_cl.html" >Linea de tiempo y CL</a></li>
-            <li><a href="ventajas.html" >Ventajas de HTML5</a></li>
-            <li><a href="tablacomparativa.html" class="activo" >Tabla comparativa de Html</a></li>
-            <li><a href="contacto.html" >Contacto</a></li>
-        </ul>
+    <header class="bg-primary py-3 text-white">
+         <div class="container d-flex align-items-center gap-3">
+              <img src="img/logo_html.avif" alt="Logo de HTML" width="55">
+              <span class="fs-4 fw-bold">
+                  Evolución del HTML: de HTML 1.0 a HTML5
+              </span>
+         </div>
+     </header>
+    <nav class="bg-dark shadow-sm mb-4"></navclass>
+        <ul class="nav justify-content-center nav-pills py-2">
+         <li class="nav-item mx-2">
+             <a class="nav-link text-white " href="index.html">Inicio</a>
+         </li>
+         <li class="nav-item mx-2">
+              <a class="nav-link text-white " href="Lineadetiempo_cl.html">Línea de tiempo y CL</a>
+         </li>
+          <li class="nav-item mx-2">
+               <a class="nav-link text-white " href="ventajas.html">Ventajas de HTML5</a>
+         </li>
+          <li class="nav-item mx-2">
+                <a class="nav-link text-white active" href="tablacomparativa.html">Tabla comparativa</a>
+          </li>
+          <li class="nav-item mx-2">
+             <a class="nav-link text-white" href="contacto.html">Contacto</a>
+          </li>
+     </ul>
     </nav>
-    <section class="contenido ">
-     <h1>Tabla Comparativa: Etiquetas Obsoletas vs. HTML5 Moderno</h1>
+    <section class="container my-5">
+  <div class="card shadow p-4">
 
-     <img src="img/images.jpg"class="imagene" alt="Imagen de Html">
+    <h1 class="text-center mb-4">
+      Tabla Comparativa: Etiquetas Obsoletas vs. HTML5 Moderno
+    </h1>
 
-     
-   
-     <table>
-         <tr>
-             <th>CATEGORIA</th>
-             <th>ETIQUETAS OBSOLETAS</th>
-             <th>ETIQUETAS MODERNAS</th>
-             <th>EXPLICACION DE CAMBIO</th>
-         </tr>
-         <tr>
-             <td>Estructura</td>
-             <td>center</td>
-             <td>CSS</td>
-             <td>Separación de responsabilidades: HTML debe definir la estructura y significado; CSS debe definir la apariencia.</td>
-         </tr>
-         <tr>
-             <td> Multimedia </td>
-             <td> object </td>
-             <td> audio y video </td>
-             <td> Nativo y sin plugins: Permite la reproducción multimedia sin requerir software adicional</td>
-         </tr>
-         <tr>
-             <td> Navegacion </td>
-             <td>ted</td>
-             <td>(nav) </td>
-             <td> Semántica: Identifica explícitamente el bloque de navegación principal para que las herramientas (como los lectores de pantalla) lo puedan reconocer.</td>
-         </tr>
-     </table>
-    </section>
-    
-    
-    
+    <div class="text-center mb-4">
+      <img src="img/images.jpg" class="img-fluid rounded" alt="Imagen de Html">
+    </div>
 
+         <div class="table-responsive">
+             <table class="table table-bordered table-striped table-hover text-center align-middle">
+                     <thead class="table-primary">
+                          <tr>
+                             <th>CATEGORÍA</th>
+                             <th>ETIQUETAS OBSOLETAS</th>
+                             <th>ETIQUETAS MODERNAS</th>
+                             <th>EXPLICACIÓN DE CAMBIO</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                      <tr>
+                         <td>Estructura</td>
+                         <td>center</td>
+                         <td>CSS</td>
+                         <td>Separación de responsabilidades: HTML define estructura y CSS la apariencia.</td>
+                     </tr>
+                      <tr>
+                         <td>Multimedia</td>
+                         <td>object</td>
+                         <td>audio y video</td>
+                         <td>Reproducción nativa sin plugins adicionales.</td>
+                      </tr>
+                     <tr>
+                         <td>Navegación</td>
+                         <td>ted</td>
+                         <td>nav</td>
+                         <td>Mejora la semántica y accesibilidad.</td>
+                     </tr>
+                     </tbody>
+             </table>
+           </div>
 
-    <footer>@datosRamos</footer>
-</body>
+           </div>
+     </section>
+      <footer class="bg-dark text-white text-center py-3">
+         @datosRamos
+      </footer>
+      
+ </body>
 </html>
+
+   
